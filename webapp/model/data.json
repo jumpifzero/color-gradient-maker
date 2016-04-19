@@ -1,8 +1,7 @@
 {
-	"startColor" : "#00FF00",
-	"endColor" : "#0000FF",
-	"steps" : 10,
-	"colorsText" : "",
-	"colorsJsonText" : "",
-	"city": "Lisbon2"
+	"startColor" : "red",
+	"endColor" : "green",
+	"steps" : "2",
+	"colorsText" : "List of colors",
+	"colorsJsonText" : "json with colors"
 }

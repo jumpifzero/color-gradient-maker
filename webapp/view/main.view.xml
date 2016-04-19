@@ -7,8 +7,22 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<commons:Label text="city:" />
-					<commons:Label text="{/city}" />
+					<commons:ColorPicker id="startColor" 
+						liveChange=".handleStepChange"
+										colorString="{	path: '/startColor', 
+														formatter:'.formatColor'}"/>
+					<commons:ColorPicker id="endColor"
+						liveChange=".handleStepChange"
+										colorString="{	path: '/endColor',
+														formatter: '.formatColor'}"/>
+					<commons:TextField value="{/steps}" change=".handleStepChange"/>
+					<commons:TextArea value="{/colorsText}"/>
+					<commons:TextArea value="{/colorsJsonText}"/>
+					<commons:Slider value="{/steps}" min="2" max="64" 
+									width="100%"
+									totalUnits="20"
+									smallStepWidth="1" stepLabels="true"
+									change=".handleStepChange" />
 				</content>
 			</Page>
 		</pages>
