@@ -1,0 +1,16 @@
+<mvc:View controllerName="namespace.controller.main" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:commons="sap.ui.commons" 
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<commons:Label text="city:" />
+					<commons:Label text="{/city}" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
